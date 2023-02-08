@@ -1,6 +1,6 @@
-SQL injection
+## SQL injection
 
-Hero form : 
+### Hero form : 
 ```
 select * from heros where username = ''  AND password = ''
 ```
@@ -13,9 +13,9 @@ Solution 2
 ```
 username: 'or '1'='1
 password: 'or '1'='1
-select * from heros where username = ''or '1'='1  AND password = ''or '1'='1' ==> true and true
+select * from heros where username = ''or '1'='1  AND password = ''or '1'='1' ==> false or true and false or true ==> true and true ==> true
 ```
-GET/search
+### GET/search
 ```
 select * from movies where name like  '%%'
 ```
